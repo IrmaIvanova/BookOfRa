@@ -57,3 +57,64 @@ li{
     position: absolute;
     bottom: -80px;
 }
+.partnerLinks{
+    position:relative;
+}
+.extraLinks ul{
+    display: flex;
+    justify-content: space-between;
+}
+.Gambling:before{
+    background:url('../img/gambling-therapy.png')no-repeat;
+    width: 34px;
+    height: 34px;
+    background-size: 34px;
+    background-position: 0 0;
+    content:'';
+    position: absolute;
+    top: -10px;
+    left: 333px;
+
+}
+.Gamcare:before{
+    background:url('../img/gamcare.png')no-repeat;
+    width: 34px;
+    height: 34px;
+    background-size: 24px;
+    background-position: 0 0;
+    content: '';
+    position: absolute;
+    top: -9px;
+    left: 480px;
+}
+.responsible-gambling{ 
+margin: 30px 30px 0;
+color: gray;
+padding-left: 45px;
+height: 35px;
+line-height: 35px;
+position: relative;
+
+}
+
+.responsible-gambling:before{
+    background:url('../img/responsible-gambling.png')no-repeat;
+    width: 34px;
+    height: 34px;
+    background-size: 24px;
+    background-position: 0 0;
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 15px;
+}
+
+.mga-image{
+    display: flex;
+    margin: 20px 0;
+}
+
+.mga-image img{
+    width:94px;
+    height: 54px;
+}
