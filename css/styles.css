@@ -1,4 +1,6 @@
 @import url('../css/stylesheets.css');
+@import url('../css/mediaquaries.css');
+
 
 .navbar{
     position:relative;
@@ -11,7 +13,8 @@
 
 .header{
     background:url('../img/back1.jpg')no-repeat;
-    background-position: 50% 137%;
+    background-position: 50% -67px;
+    background-size: 76%;
     width: 100%;
     height: 500px;
     position: relative;
@@ -53,7 +56,7 @@ li{
     content:'';
     background: url('../img/line.png') no-repeat;
     height: 44px;
-    width: 964px;
+    width: 100%;
     position: absolute;
     bottom: -80px;
 }
@@ -64,6 +67,8 @@ li{
     display: flex;
     justify-content: space-between;
 }
+
+
 .Gambling:before{
     background:url('../img/gambling-therapy.png')no-repeat;
     width: 34px;
@@ -88,12 +93,12 @@ li{
     left: 480px;
 }
 .responsible-gambling{ 
-margin: 30px 30px 0;
-color: gray;
-padding-left: 45px;
-height: 35px;
-line-height: 35px;
-position: relative;
+    margin: 30px 30px 0;
+    color: gray;
+    padding-left: 45px;
+    height: 35px;
+    line-height: 35px;
+    position: relative;
 
 }
 
@@ -109,3 +114,381 @@ position: relative;
     left: 15px;
 }
 
+/* адаптивная часть */
+@media (min-width: 320px){ 
+    body{
+        width: 100%;
+    }
+    .navbar,
+    .mainBlock,
+    .landPay,
+    .footer,
+    .payLogos,
+    .partners,
+    .last{
+      width: 300px;
+    
+    }
+    .header{
+        background-position: 36% -14%;
+        background-size: 250%;
+    
+    }
+    .container {
+        width: 100%!important;
+        left: 0%!important;
+    }
+    h1 {
+        width: 90%;
+        padding-top: 20px;
+        margin: 0 auto;
+        text-align: left;
+        font-size: 17px;
+        font-weight: bold;
+        padding-left: 20px;
+        text-shadow: 1px 3px 0px #000000;
+    }
+    .mainBlock {
+        height: auto!important;
+        margin-top: 100px;
+        font-size: 12px;
+    }
+    .mainBlock img{
+        display: none;
+    }
+    .BookOfRa:before {
+        background-size: 100%!important;
+        bottom: -80px;
+        left: 0px;
+    }
+    .landPay{
+        position: relative;
+    }
+    .extraLinks ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px 27%;
+    }
+    .landPay img{
+        position: absolute;
+        top: 45px;
+    
+    }   
+    .footer{
+        width: 100%!important;
+    }
+    .partnerLinks{
+        display: none;
+    }
+    .last{
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 411px){ 
+
+    body{
+        width: 100%;
+    }
+    .navbar,
+    .mainBlock,
+    .landPay,
+    .footer,
+    .payLogos,
+    .partners
+    .last, {
+      width: 400px;
+      margin: 0 auto;
+    }
+    .header{
+        background-position: 36% -28%;
+        background-size: 250%;
+    
+    }
+   .container {
+    width: 100%!important;
+    left: 0%!important;
+    }
+    h1 {
+        width: 90%;
+        padding-top: 20px;
+        margin: 0 auto;
+        text-align: left;
+        font-size: 19px;
+        font-weight: bold;
+        padding-left: 20px;
+        text-shadow: 1px 3px 0px #000000;
+    }
+    .mainBlock {
+        height: auto;
+        margin-top: 50px;
+        font-size: 12px;
+    }
+ 
+    .landPay img{
+        position: absolute;
+        top: 0px;
+ 
+    }
+ 
+    .extraLinks ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px 50px;
+    }
+    .partnerLinks{
+        display: none;
+    }
+}
+
+
+
+  @media (min-width: 648px){ 
+    body{
+        width: 100%;
+    }
+    .navbar,
+    .landPay,
+    .footer,
+    .payLogos,
+    .last, {
+        width: 620px;
+        margin: 0 auto;
+    }
+    .header{
+       background-position: 35% -105%;
+       background-size: 200%;
+    
+    }
+    .container {
+       width: 100%!important;
+       left: 0%!important;
+    }
+    h1 {
+       width: 90%;
+       padding-top: 20px;
+       margin: 0 auto;
+       text-align: left;
+       font-size: 19px;
+       font-weight: bold;
+       padding-left: 20px;
+       text-shadow: 1px 3px 0px #000000;
+    }
+    .mainBlock {
+       width: 620px;
+       margin-top: 50px;
+       font-size: 12px;
+    }
+
+    .landPay img{
+       position: absolute;
+       top: 0px;
+
+    }
+
+    .extraLinks ul {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       margin: 10px 27%;
+    }
+    .partnerLinks{
+       display: none;
+    }
+    .partners{
+       width: 620px;
+    }
+    .last{
+       width: 620px;
+    }
+}
+
+  @media (min-width: 748px){ 
+    body{
+        width: 100%;
+    }
+    .navbar,
+    .landPay,
+    .footer,
+    .payLogos,
+    .last, {
+        width: 720px;
+        margin: 0 auto;
+    }
+    .header{
+       background-position: 35% -65%;
+       background-size: 175%;
+    }
+    .container {
+       width: 100%!important;
+       left: 0%!important;
+    }
+    h1 {
+       width: 90%;
+       padding-top: 20px;
+       margin: 0 auto;
+       text-align: left;
+       font-size: 19px;
+       font-weight: bold;
+       padding-left: 20px;
+       text-shadow: 1px 3px 0px #000000;
+    }
+    .mainBlock {
+       width: 720px;
+       margin-top: 50px;
+       font-size: 12px;
+    }
+
+    .landPay img{
+       position: absolute;
+       top: 0px;
+
+    }
+
+    .extraLinks ul {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       margin: 10px 27%;
+    }
+    .partnerLinks{
+       display: none;
+    }
+    .partners{
+       width: 720px;
+    }
+    .last{
+       width: 720px;
+    }
+}
+
+
+  @media (min-width: 948px){ 
+     body{
+        width: 100%;
+     }
+    .navbar,
+    .landPay,
+    .footer,
+    .payLogos,
+    .last, {
+        width: 920px;
+        margin: 0 auto;
+    }
+    .header{
+        background-position: 50% -33%;
+        background-size: 105%;
+
+    }
+    .container {
+        width: 75%!important;
+        left: 14%!important;
+    }
+
+    h1 {
+        width: 90%;
+        padding-top: 20px;
+        margin: 0 auto;
+        text-align: left;
+        font-size: 19px;
+        font-weight: bold;
+        padding-left: 20px;
+        text-shadow: 1px 3px 0px #000000;
+    }
+    .mainBlock {
+        width: 920px;
+        margin-top: 50px;
+        font-size: 12px;
+    }
+
+    .landPay img{
+        position: absolute;
+        top: 0px;
+    
+    }
+
+    .extraLinks ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px 27%;
+    }
+    .partnerLinks{
+        display: none;
+    }
+    .partners{
+        width: 920px;
+    }
+    .last{
+        width: 920px;
+    }
+}
+
+   @media (min-width: 1130px){ 
+    body{
+        width: 100%;
+    }
+    .navbar,
+    
+    container,
+   .landPay,
+   .footer,
+   .payLogos,
+   .last, {
+        width: 1330px;
+        margin: 0 auto;
+    }
+   .header{
+        background-position: 50% -19%;
+        background-size: 77%;
+    }
+   .container {
+        width: 75%!important;
+        left: 14%!important;
+    }
+
+    h1 {
+       width: 90%;
+       padding-top: 20px;
+       margin: 0 auto;
+       text-align: left;
+       font-size: 19px;
+       font-weight: bold;
+       padding-left: 20px;
+       text-shadow: 1px 3px 0px #000000;
+    }
+    .mainBlock {
+        width: 1330px;
+        margin-top: 50px;
+        font-size: 12px;
+    }
+
+    .landPay img{
+        position: absolute;
+        top: 0px;
+    
+    }
+    .forSmall{
+        display:none;
+    }
+    .forBig{
+        display: block;
+    }
+    .extraLinks ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 10px 27%;
+    }
+    .partnerLinks{
+        display: none;
+    }
+    .partners{
+        width: 1330px;
+    }
+    .last{
+        width: 1330px;
+    }
+}
