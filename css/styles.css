@@ -10,7 +10,7 @@
 }
 
 .header{
-    background:url('../img/back.jpg')no-repeat;
+    background:url('../img/back1.jpg')no-repeat;
     background-position: 50% 137%;
     width: 100%;
     height: 500px;
@@ -109,12 +109,3 @@ position: relative;
     left: 15px;
 }
 
-.mga-image{
-    display: flex;
-    margin: 20px 0;
-}
-
-.mga-image img{
-    width:94px;
-    height: 54px;
-}
